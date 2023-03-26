@@ -1,7 +1,7 @@
 Vector
 =========
 
-This role can install and configure Vector for Clickhouse on Centos 7
+This role can install and configure Vector for Clickhouse on Centos 8
 
 Role Variables
 --------------
@@ -56,6 +56,6 @@ MIT
 Author Information
 ------------------
 
-Sergey klimov
+Sergey Klimov
 
 <saimsait85@gmail.com>
