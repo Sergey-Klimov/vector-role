@@ -1,14 +1,14 @@
 [Unit]
-Description=Vector service
+Description=Vector
 Documentation=https://vector.dev
 After=network-online.target
 Requires=network-online.target
 
 [Service]
-User= {{ ansible_user_id }}
-Group= {{ ansible_user_gid }}
-ExecStart=/root/{{ vector_dir }}/bin/vector --config /root/{{ vector_dir }}/config/vector.toml --watch-config true
+User={{ ansible_user_id }}
+Group={{ ansible_user_id }}
+ExecStart=/usr/bin/vector --config {{ vector_config_dir }}/vector.yml
+ExecReload=/bin/kill -HUP $MAINPID
 Restart=always
-
 [Install]
 WantedBy=multi-user.target
