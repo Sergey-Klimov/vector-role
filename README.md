@@ -18,7 +18,7 @@ Role Variables
 
 `vector_config`
 
-```text
+```bash
   sources:
     demo_logs:
       type: demo_logs
