@@ -5,7 +5,7 @@
   pre_tasks:
     - name: Copy systemctl.py file
       copy:
-        src: "../resources/systemctl2.py"
+        src: "../resources/systemctl.py"
         dest: "/bin/systemctl"
     - name: Create directory
       file:
