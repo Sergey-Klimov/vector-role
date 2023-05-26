@@ -5,8 +5,7 @@ pipeline {
     stages {
         stage('Git') {
             steps{
-                git branch: 'main', credentialsId: '7943d9ab-efa7-4520-b128-48f13295c4ae', url: 'https://github.com/Valdem88/vector-role1.git'
-            }
+                git branch: 'main', credentialsId: '7943d9ab-efa7-4520-b128-48f13295c4ae', url: 'https://github.com/Sergey-Klimov/vector-role.git}
         }
         stage('Molecule install') {
             steps{
